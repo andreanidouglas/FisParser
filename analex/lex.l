@@ -7,7 +7,7 @@ void erro();
 %}
 
 %%
-[0-9]+ {return INT;} //INTEIRO
+[0-9][0-9]* {return INT;} //INTEIRO
 [0-9].([0-9])+ {return FLOAT;}  //REAL
 "FUNCTION_BLOCK" {return FUNCTION_BLOCK;}
 "VAR_INPUT" {return VAR_INPUT;}
